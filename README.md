@@ -13,12 +13,11 @@ Acesse: http://127.0.0.1:5188
 
 Painel RH/Admin restrito: http://127.0.0.1:5188/painel-rh
 
-Credenciais de protótipo:
-
-- Usuário Administrador geral: `admin`
-- Senha Administrador geral: `admin2026`
-- Usuário: `rh`
-- Senha: `cipolatti2026`
+> **Segurança do protótipo:** esta versão ainda usa dados de demonstração na
+> interface. Não utilize credenciais de demonstração, dados pessoais reais ou
+> esta autenticação de interface em ambiente publicado. Antes de qualquer
+> implantação, conecte o sistema a um backend com autenticação segura e controle
+> de acesso no servidor.
 
 ## Entregue nesta versão
 
@@ -38,11 +37,11 @@ Conectar a interface a um backend com autenticação, PostgreSQL, armazenamento 
 
 ## Deploy em VM Debian
 
-Arquivos prontos em [deploy](G:/Site-rh/deploy):
+Arquivos prontos em [deploy](deploy):
 
-- [install-debian.sh](G:/Site-rh/deploy/install-debian.sh): instala dependências, gera build e publica no Nginx.
-- [nginx-cipolatti.conf](G:/Site-rh/deploy/nginx-cipolatti.conf): configuração Nginx com fallback para rotas React.
-- [README-debian.md](G:/Site-rh/deploy/README-debian.md): passo a passo para subir na VM.
+- [install-debian.sh](deploy/install-debian.sh): instala dependências, gera build e publica no Nginx.
+- [nginx-cipolatti.conf](deploy/nginx-cipolatti.conf): configuração Nginx com fallback para rotas React.
+- [README-debian.md](deploy/README-debian.md): passo a passo para subir na VM.
 
 Resumo na VM:
 
