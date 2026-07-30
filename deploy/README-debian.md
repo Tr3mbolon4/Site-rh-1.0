@@ -74,4 +74,4 @@ sudo certbot --nginx -d rh.seudominio.com.br
 
 ## Observação importante
 
-Esta versão ainda é um protótipo frontend. Os dados ficam no navegador/estado da aplicação e as credenciais do painel estão no código. Antes de uso real com dados de candidatos, conecte backend, banco PostgreSQL, autenticação segura, armazenamento de arquivos e variáveis de ambiente.
+Esta versao ainda e um prototipo frontend. Os dados ficam no navegador/estado da aplicacao e variaveis `VITE_*` podem ser expostas no bundle do navegador. Antes de uso real com dados de candidatos, conecte backend, banco PostgreSQL, autenticacao segura server-side, armazenamento de arquivos e variaveis de ambiente fora do cliente.
