@@ -11,6 +11,19 @@ node_modules
 dist
 dist-ssr
 *.local
+.env
+.env.*
+!.env.example
+uploads/
+backups/
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*token.json*
+*credentials.json*
+*.key
+*.crt
 
 # Editor directories and files
 .vscode/*
