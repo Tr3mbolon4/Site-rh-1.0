@@ -218,9 +218,6 @@ const funnelStatuses: Status[] = [
   'Contratado',
 ]
 
-const RH_ADMIN_USER = import.meta.env.VITE_RH_ADMIN_USER || ''
-const RH_ADMIN_PASSWORD = import.meta.env.VITE_RH_ADMIN_PASSWORD || ''
-
 const initialJobs: Job[] = [
   {
     id: 1,
@@ -302,12 +299,12 @@ const initialJobs: Job[] = [
 const initialCandidates: Candidate[] = [
   {
     id: 101,
-    name: 'Candidata Demo 01',
-    cpf: '000.000.000-01',
+    name: 'Camila Rodrigues',
+    cpf: '123.456.789-10',
     city: 'Caxias do Sul',
-    phone: '(00) 90000-0001',
-    whatsapp: '5500000000011',
-    email: 'candidata01@example.com',
+    phone: '(54) 99910-0011',
+    whatsapp: '5554999100011',
+    email: 'camila@email.com',
     education: 'Superior em Psicologia',
     experience: '4 anos em recrutamento e seleção',
     desiredSalary: 'R$ 4.200',
@@ -317,12 +314,12 @@ const initialCandidates: Candidate[] = [
     tags: ['RH', 'Entrevistas', 'Excel'],
     notes: 'Excelente experiência com vagas operacionais. Chamar para entrevista final.',
     appliedAt: '2026-05-25',
-    address: 'Endereco demonstrativo 01',
+    address: 'Rua Sinimbu, 1200 - Centro - Caxias do Sul/RS',
     genderIdentity: 'Feminino',
     birthDate: '1992-04-12',
-    linkedin: 'linkedin.com/in/candidata-demo-01',
-    resumeFile: 'curriculo-demo-01.pdf',
-    photoFile: 'foto-demo-01.jpg',
+    linkedin: 'linkedin.com/in/camilarodrigues',
+    resumeFile: 'curriculo-camila.pdf',
+    photoFile: 'foto-camila.jpg',
     formations: [{ id: 1, type: 'Graduação', course: 'Psicologia', institution: 'UCS', startDate: '2011-02-01', endDate: '2016-12-15', inProgress: 'Não' }],
     experiences: [{ id: 1, company: 'Grupo Serra', role: 'Analista de RH', startDate: '2021-03-01', endDate: '2026-04-30', current: 'Não', activities: 'Recrutamento, entrevistas, triagem e indicadores.', exitReason: 'Nova oportunidade' }],
     courses: [{ id: 1, name: 'Entrevista por competências', institution: 'ABRH', workload: '20h', completionDate: '2025-10-10', validity: '' }],
@@ -337,12 +334,12 @@ const initialCandidates: Candidate[] = [
   },
   {
     id: 102,
-    name: 'Candidato Demo 02',
-    cpf: '000.000.000-02',
+    name: 'João Martins',
+    cpf: '321.654.987-22',
     city: 'Bento Gonçalves',
-    phone: '(00) 90000-0002',
-    whatsapp: '5500000000022',
-    email: 'candidato02@example.com',
+    phone: '(54) 99840-2020',
+    whatsapp: '5554998402020',
+    email: 'joao@email.com',
     education: 'Ensino médio completo',
     experience: '7 anos como motorista de entregas',
     desiredSalary: 'R$ 3.000',
@@ -354,8 +351,8 @@ const initialCandidates: Candidate[] = [
     appliedAt: '2026-05-24',
     approvedAt: '2026-05-26',
     approvalResponsible: 'Renato Costa',
-    address: 'Endereco demonstrativo 02',
-    resumeFile: 'curriculo-demo-02.pdf',
+    address: 'Av. Planalto, 88 - Centro - Bento Gonçalves/RS',
+    resumeFile: 'curriculo-joao.pdf',
     formations: [{ id: 1, type: 'Ensino Médio', course: 'Ensino Médio', institution: 'Escola Estadual Bento', startDate: '2006-02-01', endDate: '2008-12-15', inProgress: 'Não' }],
     experiences: [{ id: 1, company: 'Transportes Vale', role: 'Motorista Entregador', startDate: '2019-01-10', endDate: '2026-03-15', current: 'Não', activities: 'Entregas regionais, conferência e relacionamento com clientes.', exitReason: 'Encerramento de contrato' }],
     courses: [{ id: 1, name: 'Direção defensiva', institution: 'SEST SENAT', workload: '16h', completionDate: '2025-02-11', validity: '2027-02-11' }],
@@ -369,12 +366,12 @@ const initialCandidates: Candidate[] = [
   },
   {
     id: 103,
-    name: 'Candidata Demo 03',
-    cpf: '000.000.000-03',
+    name: 'Letícia Vargas',
+    cpf: '444.222.111-77',
     city: 'Farroupilha',
-    phone: '(00) 90000-0003',
-    whatsapp: '5500000000033',
-    email: 'candidata03@example.com',
+    phone: '(54) 99777-1010',
+    whatsapp: '5554997771010',
+    email: 'leticia@email.com',
     education: 'Técnico em Administração',
     experience: '2 anos em atendimento e rotinas administrativas',
     desiredSalary: 'R$ 2.600',
@@ -384,8 +381,8 @@ const initialCandidates: Candidate[] = [
     tags: ['Administrativo', 'Excel', 'ERP'],
     notes: 'Boa comunicação e conhecimento em ERP.',
     appliedAt: '2026-05-26',
-    address: 'Endereco demonstrativo 03',
-    resumeFile: 'curriculo-demo-03.docx',
+    address: 'Rua Independência, 55 - Farroupilha/RS',
+    resumeFile: 'curriculo-leticia.docx',
     formations: [{ id: 1, type: 'Técnico', course: 'Administração', institution: 'SENAC', startDate: '2023-02-01', endDate: '2024-12-10', inProgress: 'Não' }],
     experiences: [{ id: 1, company: 'Loja Central', role: 'Assistente Administrativo', startDate: '2024-01-08', endDate: '2026-04-20', current: 'Não', activities: 'Atendimento, planilhas e ERP.', exitReason: 'Busca de crescimento' }],
     courses: [{ id: 1, name: 'Excel Avançado', institution: 'SENAC', workload: '40h', completionDate: '2025-09-12', validity: '' }],
@@ -399,12 +396,12 @@ const initialCandidates: Candidate[] = [
   },
   {
     id: 104,
-    name: 'Candidato Demo 04',
-    cpf: '000.000.000-04',
+    name: 'Rafael Souza',
+    cpf: '999.888.777-66',
     city: 'Caxias do Sul',
-    phone: '(00) 90000-0004',
-    whatsapp: '5500000000044',
-    email: 'candidato04@example.com',
+    phone: '(54) 99660-9090',
+    whatsapp: '5554996609090',
+    email: 'rafael@email.com',
     education: 'Superior em andamento',
     experience: 'Banco de talentos para TI e manutenção',
     desiredSalary: 'R$ 3.800',
@@ -413,7 +410,7 @@ const initialCandidates: Candidate[] = [
     tags: ['TI', 'Manutenção'],
     notes: 'Cadastro espontâneo. Associar quando abrir vaga técnica.',
     appliedAt: '2026-05-21',
-    address: 'Cidade Demo/UF',
+    address: 'Caxias do Sul/RS',
     formations: [{ id: 1, type: 'Graduação', course: 'Análise e Desenvolvimento de Sistemas', institution: 'IFRS', startDate: '2024-02-01', endDate: '', inProgress: 'Sim' }],
     experiences: [{ id: 1, company: 'Freelancer', role: 'Técnico de suporte', startDate: '2023-04-01', endDate: '', current: 'Sim', activities: 'Suporte, manutenção e pequenas automações.', exitReason: '' }],
     courses: [{ id: 1, name: 'Power BI', institution: 'Curso Livre', workload: '30h', completionDate: '2025-05-20', validity: '' }],
@@ -464,8 +461,8 @@ const initialFormerQuestions: FormerQuestion[] = [
 const initialFormerReleases: FormerRelease[] = [
   {
     id: 1,
-    name: 'Ex-Colaboradora Demo 01',
-    cpf: '000.000.000-05',
+    name: 'Ana Paula Silveira',
+    cpf: '111.222.333-44',
     sector: 'Produção',
     role: 'Operadora',
     dismissalDate: '2026-05-10',
@@ -476,8 +473,8 @@ const initialFormerReleases: FormerRelease[] = [
   },
   {
     id: 2,
-    name: 'Ex-Colaborador Demo 02',
-    cpf: '000.000.000-06',
+    name: 'Carlos Eduardo Lima',
+    cpf: '555.666.777-88',
     sector: 'Logística',
     role: 'Motorista',
     dismissalDate: '2026-04-28',
@@ -703,7 +700,7 @@ function App() {
       city: getText('candidateCity', selectedJob.city),
       phone: getText('phone', 'Não informado'),
       whatsapp: getText('whatsapp', '5500000000000'),
-      email: getText('email', 'nao-informado@example.com'),
+      email: getText('email', 'nao-informado@cipolatti.local'),
       genderIdentity: getText('genderIdentity'),
       birthDate: getText('birthDate'),
       linkedin: getText('linkedin'),
@@ -1963,13 +1960,18 @@ function AdminLogin({ onLogin }: { onLogin: () => void }) {
     const user = String(form.get('user')).trim().toLowerCase()
     const password = String(form.get('password')).trim()
 
-    if (RH_ADMIN_USER && RH_ADMIN_PASSWORD && user === RH_ADMIN_USER.toLowerCase() && password === RH_ADMIN_PASSWORD) {
+    const authorizedUsers = [
+      ['admin', 'admin2026'],
+      ['rh', 'cipolatti2026'],
+    ]
+
+    if (authorizedUsers.some(([login, pass]) => login === user && pass === password)) {
       setError('')
       onLogin()
       return
     }
 
-    setError('Acesso negado. Configure credenciais autorizadas do RH no ambiente.')
+    setError('Acesso negado. Use um login autorizado do RH.')
   }
 
   return (
