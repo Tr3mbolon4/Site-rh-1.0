@@ -8,7 +8,7 @@ O projeto apresenta uma interface web voltada a processos de RH. Pelo conteudo d
 
 ## Problema Resolvido
 
-A proposta e organizar digitalmente uma experiencia de RH, facilitando a apresentacao de oportunidades, acompanhamento de etapas e comunicacao visual de processos internos.
+A proposta e organizar digitalmente uma experiencia de RH, facilitando a apresentacao de oportunidades, acompanhamento de etapas e comunicacao visual de processos de recrutamento.
 
 ## Principais Funcionalidades
 
@@ -68,6 +68,6 @@ Prototipo frontend / projeto em desenvolvimento. Nao ha confirmacao de uso em pr
 
 ## Autor
 
-Desenvolvido por Michele Santana -- Kalion Tecnologia
+Desenvolvido por Michele Santana — Kalion Tecnologia
 
 Perfil profissional: https://github.com/Tr3mbolon4
