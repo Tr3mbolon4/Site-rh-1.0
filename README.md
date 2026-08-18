@@ -68,6 +68,6 @@ Prototipo frontend / projeto em desenvolvimento. Nao ha confirmacao de uso em pr
 
 ## Autor
 
-Desenvolvido por Michele Santana — Kalion Tecnologia
+Desenvolvido por Alexandre Santana dos Santos — Kalion Tecnologia
 
 Perfil profissional: https://github.com/Tr3mbolon4
