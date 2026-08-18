@@ -1,52 +1,73 @@
-# CIPOLATTI RH
+# Site RH 1.0
 
-Sistema web responsivo para RH, recrutamento e seleção da CIPOLATTI.
+Prototipo frontend para portal de recursos humanos, recrutamento e selecao, desenvolvido com React, TypeScript e Vite.
 
-## Rodar localmente
+## Visao Geral
 
-```bash
-npm install
-npm run dev -- --host 127.0.0.1 --port 5188 --strictPort
+O projeto apresenta uma interface web voltada a processos de RH. Pelo conteudo do repositorio, a aplicacao concentra telas e componentes para apresentar vagas, candidatos, fluxos de recrutamento ou informacoes institucionais relacionadas a recursos humanos.
+
+## Problema Resolvido
+
+A proposta e organizar digitalmente uma experiencia de RH, facilitando a apresentacao de oportunidades, acompanhamento de etapas e comunicacao visual de processos de recrutamento.
+
+## Principais Funcionalidades
+
+### Funcionalidades Disponiveis
+
+- Interface frontend em React.
+- Componentes com TypeScript.
+- Estrutura Vite.
+- Organizacao visual para portal de RH.
+- Conteudo e telas relacionadas a recrutamento.
+
+### Funcionalidades Em Desenvolvimento
+
+- Ajustes de interface e dados aparecem no codigo da aplicacao.
+
+### Funcionalidades Planejadas
+
+- Informacao nao confirmada no conteudo atual do repositorio.
+
+## Como Funciona
+
+```text
+Usuario acessa o portal
+-> navega pela interface de RH
+-> consulta informacoes ou fluxos apresentados
+-> componentes frontend organizam a experiencia
+-> o resultado e exibido na propria aplicacao web
 ```
 
-Acesse: http://127.0.0.1:5188
+## Tecnologias Utilizadas
 
-Painel RH/Admin restrito: http://127.0.0.1:5188/painel-rh
+- TypeScript
+- React
+- Vite
+- Tailwind CSS
+- Node.js
 
-Credenciais de protótipo:
+## Arquitetura
 
-- Usuário Administrador geral: `admin`
-- Senha Administrador geral: `admin2026`
-- Usuário: `rh`
-- Senha: `cipolatti2026`
-
-## Entregue nesta versão
-
-- Home pública com identidade visual baseada no ícone CIPOLATTI.
-- Listagem pública de vagas com busca, filtro por cidade e setor.
-- Página individual de vaga com perguntas inteligentes por tipo de vaga.
-- Formulário de candidatura com dados pessoais, profissionais, uploads e aceite LGPD.
-- Painel administrativo RH com dashboard, vagas, candidatos, funil Kanban, entrevistas, avaliações, desligamentos e permissões.
-- Painel RH oculto no site público e disponível apenas por tela de login restrita.
-- Perfis finais: Administrador geral, RH, Gestor de setor, Diretoria e Consulta/leitura.
-- Exportação de aprovados para arquivo `.xlsx`.
-- Layout responsivo para computador, tablet e celular.
-
-## Próxima etapa recomendada
-
-Conectar a interface a um backend com autenticação, PostgreSQL, armazenamento real de arquivos, envio de e-mail e integração futura com WhatsApp.
-
-## Deploy em VM Debian
-
-Arquivos prontos em [deploy](G:/Site-rh/deploy):
-
-- [install-debian.sh](G:/Site-rh/deploy/install-debian.sh): instala dependências, gera build e publica no Nginx.
-- [nginx-cipolatti.conf](G:/Site-rh/deploy/nginx-cipolatti.conf): configuração Nginx com fallback para rotas React.
-- [README-debian.md](G:/Site-rh/deploy/README-debian.md): passo a passo para subir na VM.
-
-Resumo na VM:
-
-```bash
-cd /opt/cipolatti-rh
-sudo SITE_DOMAIN=rh.seudominio.com.br bash deploy/install-debian.sh
+```mermaid
+flowchart LR
+    Usuario["Usuario"] --> App["Aplicacao React"]
+    App --> Componentes["Componentes"]
+    App --> Dados["Dados e telas do frontend"]
 ```
+
+## Estrutura Do Projeto
+
+- `src/`: codigo da aplicacao frontend.
+- `public/`: arquivos publicos.
+- `deploy/`: instrucoes e arquivos auxiliares de publicacao.
+- Arquivos de configuracao do Vite, TypeScript e Tailwind.
+
+## Status
+
+Prototipo frontend / projeto em desenvolvimento. Nao ha confirmacao de uso em producao no conteudo atual do repositorio.
+
+## Autor
+
+Desenvolvido por Michele Santana — Kalion Tecnologia
+
+Perfil profissional: https://github.com/Tr3mbolon4
